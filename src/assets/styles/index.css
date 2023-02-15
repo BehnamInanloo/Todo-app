@@ -1,5 +1,5 @@
 /* start general-styles */
-.bg-todo-main {
+body {
   background: linear-gradient(289.18deg, #ff9900 2.42%, #ff9900);
 }
 
@@ -51,6 +51,10 @@
   font-size: 1.3rem;
 }
 
+.todo-title button {
+  outline: none;
+}
+
 .todo-box p {
   text-align: justify;
 }
@@ -73,3 +77,96 @@
     overflow: auto;
   }
 }
+
+@media (max-width: 991px) {
+  .type-todo-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .type-todo-box button {
+    font-size: 1rem;
+  }
+
+  .todo-title h3 {
+    font-size: 1.2rem;
+  }
+
+  .todo-box p {
+    font-size: 0.9rem;
+  }
+} 
+
+@media (max-width: 767px) {
+  .type-todo-box h2 {
+    font-size: 1.8rem;
+  }
+} 
+
+@media (max-width: 422px) {
+  .type-todo-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .type-todo-box input::placeholder,
+  .type-todo-box textarea::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .type-todo-box button {
+    font-size: 0.85rem;
+  }
+
+  .todo-title h3 {
+    font-size: 1.1rem;
+  }
+
+  .todo-box p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 334px) {
+  .type-todo-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .type-todo-box input::placeholder,
+  .type-todo-box textarea::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .todo-title h3 {
+    font-size: 1rem;
+  }
+
+  .todo-title button svg {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 267px) {
+  .type-todo-box h2 {
+    font-size: 0.9rem;
+  }
+
+  .type-todo-box input::placeholder,
+  .type-todo-box textarea::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .type-todo-box button {
+    font-size: 0.75rem;
+  }
+
+  .todo-title h3 {
+    font-size: 0.9rem;
+  }
+
+  .todo-title button svg {
+    font-size: 0.8rem;
+  }
+
+  .todo-box p {
+    font-size: 0.7rem;
+  }
+} 
