@@ -41,6 +41,7 @@ body {
 /* start todo-box-styles */
 .todo-box {
   width: 95%;
+  overflow: hidden;
 }
 
 .todo-title {
@@ -57,6 +58,12 @@ body {
 
 .todo-box p {
   text-align: justify;
+}
+
+.todo-box small {
+  display: block;
+  text-align: right;
+  color: #ccc;
 }
 
 .todo-box:last-child {
@@ -94,6 +101,10 @@ body {
   .todo-box p {
     font-size: 0.9rem;
   }
+
+  .todo-box small {
+    font-size: 0.8rem;
+  }
 } 
 
 @media (max-width: 767px) {
@@ -122,6 +133,10 @@ body {
 
   .todo-box p {
     font-size: 0.8rem;
+  }
+
+  .todo-box small {
+    font-size: 0.7rem;
   }
 }
 
@@ -168,5 +183,9 @@ body {
 
   .todo-box p {
     font-size: 0.7rem;
+  }
+
+  .todo-box small {
+    font-size: 0.6rem;
   }
 } 

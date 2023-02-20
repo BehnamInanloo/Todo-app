@@ -5,7 +5,7 @@ import Todo from './components/Todo'
 const App = () => {
 
   const [todoList, setTodoList] = useState([
-    { title: 'Behnam Inanloo', text: 'front-end developer', id: 0 },
+    { title: 'Behnam Inanloo', text: 'front-end developer', time: '0:00', date: '19/2/2021', id: 0 }
   ])
 
   return (
@@ -20,7 +20,7 @@ const App = () => {
             justify-content-center mb-5 mb-md-0 todo-main-box'>
           <div className='w-100 todo-boxes'>
             {todoList.map((item) => (
-              <Todo title={item.title} text={item.text} key={item.id}
+              <Todo title={item.title} text={item.text} time={item.time} date={item.date} key={item.id}
                 setTodoList={setTodoList} todoList={todoList} id={item.id} />
             ))}
           </div>

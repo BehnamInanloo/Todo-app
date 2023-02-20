@@ -6,15 +6,21 @@ const TypeTodo = ({ setTodoList, todoList }) => {
   const [newTodo, setNewTodo] = useState({
     title: '',
     text: '',
+    time: '',
+    date: '',
     id: 0
   })
 
   const addNewTodo = () => {
+    newTodo.time = new Date().toLocaleTimeString()
+    newTodo.date = new Date().toLocaleDateString()
     if (newTodo.title) {
       setTodoList([...todoList, newTodo])
       setNewTodo({
         title: '',
         text: '',
+        time: '',
+        date: '',
         id: 0
       })
     }
@@ -35,7 +41,7 @@ const TypeTodo = ({ setTodoList, todoList }) => {
         shadow-sm' value={newTodo.text} onChange={(event) => setNewTodo(
         {
           ...newTodo,
-          text: event.target.value
+          text: event.target.value,
         })
         }></textarea>
       <button className='btn w-100 border-0 shadow' onClick={addNewTodo}>
