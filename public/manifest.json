@@ -1,25 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Todo list",
+  "short_name": "ToDo",
+  "name": "To Do list",
   "icons": [
     {
       "src": "main-logo.png",
-      "sizes": "64x64 32x32 16x16",
+      "sizes": "512x512 192x192 64x64 32x32 16x16",
       "type": "image/png"
-    },
-    {
-      "src": "main-logo.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "main-logo.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ff9900"
 }
