@@ -39,6 +39,6 @@
   "scope": "/",
   "start_url": "/todo-app",
   "display": "standalone",
-  "theme_color": "#37d200",
+  "theme_color": "#ff9900",
   "background_color": "#000000"
 }
