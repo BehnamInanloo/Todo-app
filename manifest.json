@@ -1,6 +1,8 @@
 {
+  "author" : "Behnam Inanloo",
   "short_name": "ToDo",
   "name": "To Do list",
+  "description" : "This is an application to note and record activities and events",
   "icons": [
     {
       "src": "main-logo-16.png",
@@ -33,7 +35,9 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "id": "/todo-app",
+  "scope": "/",
+  "start_url": "/todo-app",
   "display": "standalone",
   "theme_color": "#37d200",
   "background_color": "#000000"
